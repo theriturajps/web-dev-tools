@@ -1,16 +1,15 @@
 <link rel="stylesheet" type="text/css" href="https://assets.gitforge.in/global/about-us-page-generator/style.css">
-<div id="about_us_block">
-  <form>
-      <label>Website Name: </label>
-      <textarea id="Web_Name" name="Web_Name" placeholder="Ex- GitForge" rows="1"></textarea>
-      <label>Website Type: </label>
-      <textarea id="Web_Type" name="Web_Type" placeholder="Ex- Educational, Tech, Dating etc...." rows="1"></textarea>
-      <label>Website Speciality: </label>
-      <textarea id="Web_Spec" name="Web_Spec" placeholder="Ex- Tips and Tricks, Tech tutorial" rows="1"></textarea>
-      <button id="btn" onclick="myFunction1()" type="button">Generate About Us Page</button>
-      <p id="Msg"><b>Copy your About Us Page below!!</b></p>
-      <textarea id="result" max-cols="85" name="result" rows="10"></textarea>
-      <button id="btn_cpy" onclick="myFunction2('result')" type="button">Copy HTML Code</button>
-    </form> 
-</div>
+  <div class="AboutUsContainer">
+    <form id="AboutUsForm">
+      <label for="WebsiteName" class="label-title">Website Name:</label>
+      <input type="text" id="WebsiteName" placeholder="Ex- GitForge" required>
+      <label for="WebsiteType" class="label-title">Website Type:</label>
+      <input type="text" id="WebsiteType" placeholder="Ex- eCommerce, Educational, Trends" required>
+      <label for="WebsiteSpeciality" class="label-title">Website Speciality:</label>
+      <input type="text" id="WebsiteSpeciality" placeholder="Ex- Tips and Tricks, Adsence Approval etc.." required>
+      <button type="button" class="AboutUsButton" onclick="generateAboutUs()">Generate</button>
+    </form>
+    <textarea id="AboutUsContent" readonly></textarea>
+    <button class="AboutUsButton copy-button" onclick="copyToClipboard()">Copy</button>
+  </div>
 <script src="https://assets.gitforge.in/global/about-us-page-generator/script.js"></script>
