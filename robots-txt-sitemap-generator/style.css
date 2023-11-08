@@ -1,0 +1,56 @@
+.is-dark #gitforge_sitemap {
+    background: #2d2d30;
+}
+
+#gitforge_sitemap {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 8px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    box-shadow: 5px 5px 0px 0px #056aff;
+}
+
+.gitforge_sitemap_label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Style the textareas */
+.gitforge_sitemap_textarea {
+    width: 100%;
+    padding: 8px 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+/* Style the buttons */
+.gitforge_sitemap_button {
+    background-color: #056aff;
+    color: white;
+    padding: 11px 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Responsive columns for smaller screens */
+@media (max-width: 600px) {
+
+  #gitforge_sitemap {
+    padding: 10px;
+  }
+  
+  .gitforge_sitemap_textarea {
+    margin-bottom: 10px;
+  }
+  
+  .gitforge_sitemap_button { 
+    margin-bottom: 10px;
+  }
+
+}
