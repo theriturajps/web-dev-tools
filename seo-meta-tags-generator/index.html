@@ -1,0 +1,39 @@
+<div id="gitforge_seo_generator">
+  <label style="color: black; font-size: 12px; font-weight: bold;"><i class="fas fa-search-location" style="font-size: 17px;"></i> &nbsp;Generate Google Search Meta Tags Here:</label><br/>
+  <label>Title: </label>
+  <textarea id="title" max-cols="1" name="title" rows="1"> </textarea>    
+  <label>Author: </label>
+  <textarea id="author" max-cols="1" name="author" rows="1"></textarea> 
+  <label>Description: </label>
+  <textarea id="des" max-cols="1" name="des" rows="1"></textarea> 
+  <label>Keywords: <span style="color: red; font-size: 10px; font-weight: bold;">(Put comma in between keywords)</span>:</label>
+  <textarea id="key" max-cols="1" name="key" rows="1" type="text"></textarea> 
+  <label>Language: </label>
+  <select id="language">
+    <option value="English">English</option>
+    <option value="French">French</option>
+    <option value="Spanish">Spanish</option>
+    <option value="Arabic">Arabic</option>
+    <option value="Russian">Russian</option>
+    <option value="Japanese">Japanese</option>
+    <option value="Korean">Korean</option>
+    <option value="Hindi">Hindi</option>
+    <option value="Portuguese">Portuguese</option>
+  </select>
+  <label>Allow robots to Index: </label>
+  <select id="inde">
+    <option value="index">Yes</option>
+    <option value="noindex">NO</option>
+    </select>
+  <label>Content Type: </label>
+  <select id="ConType">
+    <option value="UTF-8">UTF-8</option>
+    <option value="UTF-16">UTF-16</option>
+    <option value="ISO-8859-1">ISO-8859-1</option>
+    <option value="WINDOWS-1252">WINDOWS-1252</option>
+  </select>
+  <button id="btn" onclick="myFunction1()" type="button">Generate Meta Tags For SEO</button>
+  <p style="color: red; font-size: 15px; font-weight: bold; margin-top: 4px;"><span id="Msg"></span><span id="tim" style="color: black;"></span></p>
+  <textarea id="result" max-cols="5" name="result" rows="5"></textarea>
+<button id="btn_cpy" onclick="myFunction2('result')" type="button">Copy Meta Tags Code</button>
+</div>
