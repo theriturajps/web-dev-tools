@@ -1,11 +1,11 @@
 <link rel="stylesheet" type="text/css" href="https://assets.gitforge.in/global/robots-txt-sitemap-generator/style.css">
-<div id="gitforge_sitemap">
-    <label class="gitforge_sitemap_label"><b>Enter Site URL</b>: </label>
-    <textarea class="gitforge_sitemap_textarea" placeholder="Note: Do not include https://" id="U-url" name="U-url" rows="1" maxlength="1"></textarea>
-    <span style="color: #727272; font-size: 12px;">Paste the URL of your Blogger blog</span>
-    <button class="gitforge_sitemap_button" id="btn" type="button" onclick="myFunction()">Generate XML Sitemap</button>
-    <p id="Msg" style="display:none;"><b>XML Sitemap</b> The XML sitemap for your blog <span id="site"></span> is ready 👇</p>
-    <textarea class="gitforge_sitemap_textarea" id="result" name="result" rows="10" maxlength="85"></textarea>
-    <button class="gitforge_sitemap_button" id="btn_cpy" type="button" onclick="myFunction2('result')">Copy XML Sitemap</button>
-</div>
+  <div id="robots_txt_Block">
+    <label class="robots_txt_label" ><b>Enter Site URL</b>: <small>(<b>Note:</b> Do not include https://</small>)</label>
+    <textarea class="robots_txt_textarea" id="U-url" max-cols="1" name="U-url" rows="1"></textarea>
+    <span class="robots_txt_span">Paste the URL of your Blogger blog</span>
+    <button class="robots_txt_button" id="btn" onclick="myFunction()" type="button">Generate XML Sitemap</button>
+    <p class="robots_txt_p_msg" id="Msg"><b>XML Sitemap</b> The XML sitemap for your blog <span class="robots_txt_span" id="site"></span> is ready 👇</p>
+    <textarea class="robots_txt_result_textarea" id="result" max-cols="85" name="result" rows="10" readonly></textarea>
+    <button class="robots_txt_btn_copy" id="btn_cpy" onclick="myFunction2('result')" type="button">Copy XML Sitemap</button>
+  </div>
 <script src="https://assets.gitforge.in/global/robots-txt-sitemap-generator/script.js"></script>
